@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sat Nov 20 13:24:17 2021
+Quartus Prime Version : 15.1.2 Build 193 02/01/2016 SJ Standard Edition
+Revision Name : Image1
+Top-level Entity Name : Top
+Family : MAX 10
+Total logic elements : 1,464
+    Total combinational functions : 1,229
+    Dedicated logic registers : 817
+Total registers : 817
+Total pins : 8
+Total virtual pins : 0
+Total memory bits : 4,096
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 1
+ADC blocks : 0

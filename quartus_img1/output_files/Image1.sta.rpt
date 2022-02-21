@@ -1,0 +1,774 @@
+TimeQuest Timing Analyzer report for Image1
+Sat Nov 20 13:24:58 2021
+Quartus Prime Version 15.1.2 Build 193 02/01/2016 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Slow 1200mV 85C Model Setup Summary
+  7. Slow 1200mV 85C Model Hold Summary
+  8. Slow 1200mV 85C Model Recovery Summary
+  9. Slow 1200mV 85C Model Removal Summary
+ 10. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 11. Slow 1200mV 85C Model Metastability Summary
+ 12. Slow 1200mV 0C Model Fmax Summary
+ 13. Slow 1200mV 0C Model Setup Summary
+ 14. Slow 1200mV 0C Model Hold Summary
+ 15. Slow 1200mV 0C Model Recovery Summary
+ 16. Slow 1200mV 0C Model Removal Summary
+ 17. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 18. Slow 1200mV 0C Model Metastability Summary
+ 19. Fast 1200mV 0C Model Setup Summary
+ 20. Fast 1200mV 0C Model Hold Summary
+ 21. Fast 1200mV 0C Model Recovery Summary
+ 22. Fast 1200mV 0C Model Removal Summary
+ 23. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 24. Fast 1200mV 0C Model Metastability Summary
+ 25. Multicorner Timing Analysis Summary
+ 26. Board Trace Model Assignments
+ 27. Input Transition Times
+ 28. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 29. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 30. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 31. Setup Transfers
+ 32. Hold Transfers
+ 33. Recovery Transfers
+ 34. Removal Transfers
+ 35. Report TCCS
+ 36. Report RSKM
+ 37. Unconstrained Paths Summary
+ 38. Clock Status Summary
+ 39. Unconstrained Input Ports
+ 40. Unconstrained Output Ports
+ 41. Unconstrained Input Ports
+ 42. Unconstrained Output Ports
+ 43. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                               ;
++-----------------------+---------------------------------------------------------+
+; Quartus Prime Version ; Version 15.1.2 Build 193 02/01/2016 SJ Standard Edition ;
+; Timing Analyzer       ; TimeQuest                                               ;
+; Revision Name         ; Image1                                                  ;
+; Device Family         ; MAX 10                                                  ;
+; Device Name           ; 10M08SAE144C8GES                                        ;
+; Timing Models         ; Final                                                   ;
+; Delay Model           ; Combined                                                ;
+; Rise/Fall Delays      ; Enabled                                                 ;
++-----------------------+---------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 2.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;  33.3%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
++-------------------------------------------------------------------------------------------------------------------------------------------+------+---------+------------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Name                                                                                                                                ; Type ; Period  ; Frequency  ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                                                                                                                       ;
++-------------------------------------------------------------------------------------------------------------------------------------------+------+---------+------------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; inclk                                                                                                                                     ; Base ; 1.000   ; 1000.0 MHz ; 0.000 ; 0.500  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { inclk }                                                                                                                                     ;
+; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; Base ; 1.000   ; 1000.0 MHz ; 0.000 ; 0.500  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { MainControl:MainControl|ReadBytes:ReadBytes|rd_clock }                                                                                      ;
+; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; Base ; 1.000   ; 1000.0 MHz ; 0.000 ; 0.500  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { MainControl:MainControl|WriteBytes:WriteBytes|wr_clock }                                                                                    ;
+; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; Base ; 1.000   ; 1000.0 MHz ; 0.000 ; 0.500  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg } ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; Base ; 181.818 ; 5.5 MHz    ; 0.000 ; 90.909 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc }                                                                        ;
+; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; Base ; 1.000   ; 1000.0 MHz ; 0.000 ; 0.500  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock }                                                                                      ;
+; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; Base ; 1.000   ; 1000.0 MHz ; 0.000 ; 0.500  ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock }                                                                                ;
++-------------------------------------------------------------------------------------------------------------------------------------------+------+---------+------------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                                                                        ;
++------------+-----------------+--------------------------------------------------------------------+-------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                                                         ; Note                                                  ;
++------------+-----------------+--------------------------------------------------------------------+-------------------------------------------------------+
+; 65.88 MHz  ; 31.71 MHz       ; inclk                                                              ; limit due to high minimum pulse width violation (tch) ;
+; 453.93 MHz ; 402.09 MHz      ; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; limit due to minimum period restriction (tmin)        ;
++------------+-----------------+--------------------------------------------------------------------+-------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup Summary                                                                                                                                 ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+; Clock                                                                                                                                     ; Slack   ; End Point TNS ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+; inclk                                                                                                                                     ; -8.576  ; -3574.136     ;
+; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; -6.168  ; -6.168        ;
+; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; -2.948  ; -2.948        ;
+; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; -2.641  ; -5.920        ;
+; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; -1.447  ; -4.195        ;
+; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; -1.303  ; -1.303        ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; 179.615 ; 0.000         ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary                                                                                                                                ;
++-------------------------------------------------------------------------------------------------------------------------------------------+-------+---------------+
+; Clock                                                                                                                                     ; Slack ; End Point TNS ;
++-------------------------------------------------------------------------------------------------------------------------------------------+-------+---------------+
+; inclk                                                                                                                                     ; 0.359 ; 0.000         ;
+; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; 0.738 ; 0.000         ;
+; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; 0.761 ; 0.000         ;
+; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; 0.781 ; 0.000         ;
+; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; 0.866 ; 0.000         ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; 1.133 ; 0.000         ;
+; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; 5.278 ; 0.000         ;
++-------------------------------------------------------------------------------------------------------------------------------------------+-------+---------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Recovery Summary                                                      ;
++--------------------------------------------------------------------+--------+---------------+
+; Clock                                                              ; Slack  ; End Point TNS ;
++--------------------------------------------------------------------+--------+---------------+
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; -3.854 ; -7.708        ;
+; inclk                                                              ; -3.054 ; -1592.341     ;
++--------------------------------------------------------------------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Removal Summary                                                      ;
++--------------------------------------------------------------------+-------+---------------+
+; Clock                                                              ; Slack ; End Point TNS ;
++--------------------------------------------------------------------+-------+---------------+
+; inclk                                                              ; 1.189 ; 0.000         ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 2.352 ; 0.000         ;
++--------------------------------------------------------------------+-------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+; Clock                                                                                                                                     ; Slack   ; End Point TNS ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+; inclk                                                                                                                                     ; -24.000 ; -1313.303     ;
+; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; -4.686  ; -9.303        ;
+; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; -3.901  ; -11.703       ;
+; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; -3.901  ; -11.703       ;
+; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; -3.901  ; -3.901        ;
+; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; -3.901  ; -3.901        ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; 90.675  ; 0.000         ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+
+
+-----------------------------------------------
+; Slow 1200mV 85C Model Metastability Summary ;
+-----------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                                                                        ;
++-----------+-----------------+--------------------------------------------------------------------+-------------------------------------------------------+
+; Fmax      ; Restricted Fmax ; Clock Name                                                         ; Note                                                  ;
++-----------+-----------------+--------------------------------------------------------------------+-------------------------------------------------------+
+; 70.5 MHz  ; 32.04 MHz       ; inclk                                                              ; limit due to high minimum pulse width violation (tch) ;
+; 481.7 MHz ; 402.09 MHz      ; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; limit due to minimum period restriction (tmin)        ;
++-----------+-----------------+--------------------------------------------------------------------+-------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup Summary                                                                                                                                  ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+; Clock                                                                                                                                     ; Slack   ; End Point TNS ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+; inclk                                                                                                                                     ; -8.132  ; -3356.187     ;
+; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; -5.784  ; -5.784        ;
+; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; -2.681  ; -2.681        ;
+; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; -2.412  ; -5.418        ;
+; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; -1.351  ; -3.793        ;
+; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; -1.227  ; -1.227        ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; 179.742 ; 0.000         ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary                                                                                                                                 ;
++-------------------------------------------------------------------------------------------------------------------------------------------+-------+---------------+
+; Clock                                                                                                                                     ; Slack ; End Point TNS ;
++-------------------------------------------------------------------------------------------------------------------------------------------+-------+---------------+
+; inclk                                                                                                                                     ; 0.322 ; 0.000         ;
+; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; 0.693 ; 0.000         ;
+; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; 0.714 ; 0.000         ;
+; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; 0.728 ; 0.000         ;
+; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; 0.806 ; 0.000         ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; 1.026 ; 0.000         ;
+; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; 4.824 ; 0.000         ;
++-------------------------------------------------------------------------------------------------------------------------------------------+-------+---------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Recovery Summary                                                       ;
++--------------------------------------------------------------------+--------+---------------+
+; Clock                                                              ; Slack  ; End Point TNS ;
++--------------------------------------------------------------------+--------+---------------+
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; -3.621 ; -7.242        ;
+; inclk                                                              ; -2.763 ; -1407.420     ;
++--------------------------------------------------------------------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Removal Summary                                                       ;
++--------------------------------------------------------------------+-------+---------------+
+; Clock                                                              ; Slack ; End Point TNS ;
++--------------------------------------------------------------------+-------+---------------+
+; inclk                                                              ; 1.068 ; 0.000         ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 2.177 ; 0.000         ;
++--------------------------------------------------------------------+-------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary                                                                                                                    ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+; Clock                                                                                                                                     ; Slack   ; End Point TNS ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+; inclk                                                                                                                                     ; -24.000 ; -1311.522     ;
+; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; -4.622  ; -9.103        ;
+; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; -3.901  ; -11.703       ;
+; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; -3.901  ; -11.703       ;
+; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; -3.901  ; -3.901        ;
+; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; -3.901  ; -3.901        ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; 90.677  ; 0.000         ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+
+
+----------------------------------------------
+; Slow 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup Summary                                                                                                                                  ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+; Clock                                                                                                                                     ; Slack   ; End Point TNS ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+; inclk                                                                                                                                     ; -5.415  ; -1036.296     ;
+; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; -2.149  ; -2.149        ;
+; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; -0.553  ; -0.553        ;
+; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; -0.412  ; -0.660        ;
+; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; -0.044  ; -0.057        ;
+; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; 0.016   ; 0.000         ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; 180.914 ; 0.000         ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary                                                                                                                                  ;
++-------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
+; Clock                                                                                                                                     ; Slack  ; End Point TNS ;
++-------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
+; inclk                                                                                                                                     ; -0.151 ; -0.169        ;
+; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; 0.200  ; 0.000         ;
+; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; 0.202  ; 0.000         ;
+; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; 0.211  ; 0.000         ;
+; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; 0.246  ; 0.000         ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; 0.384  ; 0.000         ;
+; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; 1.369  ; 0.000         ;
++-------------------------------------------------------------------------------------------------------------------------------------------+--------+---------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Recovery Summary                                                       ;
++--------------------------------------------------------------------+--------+---------------+
+; Clock                                                              ; Slack  ; End Point TNS ;
++--------------------------------------------------------------------+--------+---------------+
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; -1.507 ; -3.014        ;
+; inclk                                                              ; -0.618 ; -343.435      ;
++--------------------------------------------------------------------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Removal Summary                                                       ;
++--------------------------------------------------------------------+-------+---------------+
+; Clock                                                              ; Slack ; End Point TNS ;
++--------------------------------------------------------------------+-------+---------------+
+; inclk                                                              ; 0.485 ; 0.000         ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 0.821 ; 0.000         ;
++--------------------------------------------------------------------+-------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary                                                                                                                    ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+; Clock                                                                                                                                     ; Slack   ; End Point TNS ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+; inclk                                                                                                                                     ; -24.000 ; -1055.159     ;
+; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; -4.561  ; -9.101        ;
+; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; -1.000  ; -3.000        ;
+; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; -1.000  ; -3.000        ;
+; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; -1.000  ; -1.000        ;
+; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; -1.000  ; -1.000        ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; 90.672  ; 0.000         ;
++-------------------------------------------------------------------------------------------------------------------------------------------+---------+---------------+
+
+
+----------------------------------------------
+; Fast 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                                                                                                                         ;
++--------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+-----------+---------+---------------------+
+; Clock                                                                                                                                      ; Setup     ; Hold   ; Recovery  ; Removal ; Minimum Pulse Width ;
++--------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+-----------+---------+---------------------+
+; Worst-case Slack                                                                                                                           ; -8.576    ; -0.151 ; -3.854    ; 0.485   ; -24.000             ;
+;  MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; -1.303    ; 0.211  ; N/A       ; N/A     ; -3.901              ;
+;  MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; -1.447    ; 0.200  ; N/A       ; N/A     ; -3.901              ;
+;  OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; -6.168    ; 1.369  ; N/A       ; N/A     ; -4.686              ;
+;  OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; 179.615   ; 0.384  ; -3.854    ; 0.821   ; 90.672              ;
+;  Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; -2.641    ; 0.202  ; N/A       ; N/A     ; -3.901              ;
+;  Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; -2.948    ; 0.246  ; N/A       ; N/A     ; -3.901              ;
+;  inclk                                                                                                                                     ; -8.576    ; -0.151 ; -3.054    ; 0.485   ; -24.000             ;
+; Design-wide TNS                                                                                                                            ; -3594.67  ; -0.169 ; -1600.049 ; 0.0     ; -1353.814           ;
+;  MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; -1.303    ; 0.000  ; N/A       ; N/A     ; -3.901              ;
+;  MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; -4.195    ; 0.000  ; N/A       ; N/A     ; -11.703             ;
+;  OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; -6.168    ; 0.000  ; N/A       ; N/A     ; -9.303              ;
+;  OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; 0.000     ; 0.000  ; -7.708    ; 0.000   ; 0.000               ;
+;  Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; -5.920    ; 0.000  ; N/A       ; N/A     ; -11.703             ;
+;  Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; -2.948    ; 0.000  ; N/A       ; N/A     ; -3.901              ;
+;  inclk                                                                                                                                     ; -3574.136 ; -0.169 ; -1592.341 ; 0.000   ; -1313.303           ;
++--------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+-----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                   ;
++--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin          ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; txd_uart     ; 3.3-V LVCMOS ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; led[0]       ; 3.3-V LVCMOS ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; led[1]       ; 3.3-V LVCMOS ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; led[2]       ; 3.3-V LVCMOS ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; led[3]       ; 3.3-V LVCMOS ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; led[4]       ; 3.3-V LVCMOS ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_TDO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++---------------------------------------------------------------------------------+
+; Input Transition Times                                                          ;
++---------------------+-----------------------+-----------------+-----------------+
+; Pin                 ; I/O Standard          ; 10-90 Rise Time ; 90-10 Fall Time ;
++---------------------+-----------------------+-----------------+-----------------+
+; inclk               ; 3.3-V LVCMOS          ; 2640 ps         ; 2640 ps         ;
+; rxd_uart            ; 3.3-V LVCMOS          ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_TMS~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_TCK~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_TDI~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_CONFIG_SEL~ ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_nCONFIG~    ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_nSTATUS~    ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_CONF_DONE~  ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
++---------------------+-----------------------+-----------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin          ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; txd_uart     ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.68e-08 V                   ; 3.12 V              ; -0.0463 V           ; 0.208 V                              ; 0.277 V                              ; 8.5e-10 s                   ; 8.53e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 3.68e-08 V                  ; 3.12 V             ; -0.0463 V          ; 0.208 V                             ; 0.277 V                             ; 8.5e-10 s                  ; 8.53e-10 s                 ; No                        ; No                        ;
+; led[0]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.68e-08 V                   ; 3.12 V              ; -0.0464 V           ; 0.207 V                              ; 0.276 V                              ; 8.51e-10 s                  ; 8.52e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 3.68e-08 V                  ; 3.12 V             ; -0.0464 V          ; 0.207 V                             ; 0.276 V                             ; 8.51e-10 s                 ; 8.52e-10 s                 ; No                        ; No                        ;
+; led[1]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.68e-08 V                   ; 3.12 V              ; -0.0463 V           ; 0.208 V                              ; 0.277 V                              ; 8.5e-10 s                   ; 8.53e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 3.68e-08 V                  ; 3.12 V             ; -0.0463 V          ; 0.208 V                             ; 0.277 V                             ; 8.5e-10 s                  ; 8.53e-10 s                 ; No                        ; No                        ;
+; led[2]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.68e-08 V                   ; 3.12 V              ; -0.0463 V           ; 0.208 V                              ; 0.277 V                              ; 8.5e-10 s                   ; 8.53e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 3.68e-08 V                  ; 3.12 V             ; -0.0463 V          ; 0.208 V                             ; 0.277 V                             ; 8.5e-10 s                  ; 8.53e-10 s                 ; No                        ; No                        ;
+; led[3]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.68e-08 V                   ; 3.12 V              ; -0.0464 V           ; 0.207 V                              ; 0.276 V                              ; 8.51e-10 s                  ; 8.52e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 3.68e-08 V                  ; 3.12 V             ; -0.0464 V          ; 0.207 V                             ; 0.276 V                             ; 8.51e-10 s                 ; 8.52e-10 s                 ; No                        ; No                        ;
+; led[4]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.68e-08 V                   ; 3.12 V              ; -0.0463 V           ; 0.208 V                              ; 0.277 V                              ; 8.5e-10 s                   ; 8.53e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 3.68e-08 V                  ; 3.12 V             ; -0.0463 V          ; 0.208 V                             ; 0.277 V                             ; 8.5e-10 s                  ; 8.53e-10 s                 ; No                        ; No                        ;
+; ~ALTERA_TDO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.49e-09 V                   ; 2.38 V              ; -0.0505 V           ; 0.23 V                               ; 0.155 V                              ; 4.84e-10 s                  ; 6.18e-10 s                  ; Yes                        ; No                         ; 2.32 V                      ; 7.49e-09 V                  ; 2.38 V             ; -0.0505 V          ; 0.23 V                              ; 0.155 V                             ; 4.84e-10 s                 ; 6.18e-10 s                 ; Yes                       ; No                        ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin          ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; txd_uart     ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.3e-06 V                    ; 3.1 V               ; -0.0199 V           ; 0.191 V                              ; 0.262 V                              ; 1.03e-09 s                  ; 1.05e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.3e-06 V                   ; 3.1 V              ; -0.0199 V          ; 0.191 V                             ; 0.262 V                             ; 1.03e-09 s                 ; 1.05e-09 s                 ; Yes                       ; Yes                       ;
+; led[0]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.3e-06 V                    ; 3.1 V               ; -0.0196 V           ; 0.191 V                              ; 0.261 V                              ; 1.03e-09 s                  ; 1.05e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.3e-06 V                   ; 3.1 V              ; -0.0196 V          ; 0.191 V                             ; 0.261 V                             ; 1.03e-09 s                 ; 1.05e-09 s                 ; Yes                       ; Yes                       ;
+; led[1]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.3e-06 V                    ; 3.1 V               ; -0.0199 V           ; 0.191 V                              ; 0.262 V                              ; 1.03e-09 s                  ; 1.05e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.3e-06 V                   ; 3.1 V              ; -0.0199 V          ; 0.191 V                             ; 0.262 V                             ; 1.03e-09 s                 ; 1.05e-09 s                 ; Yes                       ; Yes                       ;
+; led[2]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.3e-06 V                    ; 3.1 V               ; -0.0199 V           ; 0.191 V                              ; 0.262 V                              ; 1.03e-09 s                  ; 1.05e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.3e-06 V                   ; 3.1 V              ; -0.0199 V          ; 0.191 V                             ; 0.262 V                             ; 1.03e-09 s                 ; 1.05e-09 s                 ; Yes                       ; Yes                       ;
+; led[3]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.3e-06 V                    ; 3.1 V               ; -0.0196 V           ; 0.191 V                              ; 0.261 V                              ; 1.03e-09 s                  ; 1.05e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.3e-06 V                   ; 3.1 V              ; -0.0196 V          ; 0.191 V                             ; 0.261 V                             ; 1.03e-09 s                 ; 1.05e-09 s                 ; Yes                       ; Yes                       ;
+; led[4]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.3e-06 V                    ; 3.1 V               ; -0.0199 V           ; 0.191 V                              ; 0.262 V                              ; 1.03e-09 s                  ; 1.05e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 2.3e-06 V                   ; 3.1 V              ; -0.0199 V          ; 0.191 V                             ; 0.262 V                             ; 1.03e-09 s                 ; 1.05e-09 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_TDO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.88e-07 V                   ; 2.36 V              ; -0.0211 V           ; 0.162 V                              ; 0.122 V                              ; 6.58e-10 s                  ; 7.79e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.88e-07 V                  ; 2.36 V             ; -0.0211 V          ; 0.162 V                             ; 0.122 V                             ; 6.58e-10 s                 ; 7.79e-10 s                 ; No                        ; Yes                       ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin          ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; txd_uart     ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.46 V                       ; 8.93e-07 V                   ; 3.53 V              ; -0.0306 V           ; 0.247 V                              ; 0.251 V                              ; 6.54e-10 s                  ; 6.68e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 8.93e-07 V                  ; 3.53 V             ; -0.0306 V          ; 0.247 V                             ; 0.251 V                             ; 6.54e-10 s                 ; 6.68e-10 s                 ; No                        ; Yes                       ;
+; led[0]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.46 V                       ; 8.93e-07 V                   ; 3.53 V              ; -0.0306 V           ; 0.247 V                              ; 0.252 V                              ; 6.55e-10 s                  ; 6.68e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 8.93e-07 V                  ; 3.53 V             ; -0.0306 V          ; 0.247 V                             ; 0.252 V                             ; 6.55e-10 s                 ; 6.68e-10 s                 ; No                        ; Yes                       ;
+; led[1]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.46 V                       ; 8.93e-07 V                   ; 3.53 V              ; -0.0306 V           ; 0.247 V                              ; 0.251 V                              ; 6.54e-10 s                  ; 6.68e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 8.93e-07 V                  ; 3.53 V             ; -0.0306 V          ; 0.247 V                             ; 0.251 V                             ; 6.54e-10 s                 ; 6.68e-10 s                 ; No                        ; Yes                       ;
+; led[2]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.46 V                       ; 8.93e-07 V                   ; 3.53 V              ; -0.0306 V           ; 0.247 V                              ; 0.251 V                              ; 6.54e-10 s                  ; 6.68e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 8.93e-07 V                  ; 3.53 V             ; -0.0306 V          ; 0.247 V                             ; 0.251 V                             ; 6.54e-10 s                 ; 6.68e-10 s                 ; No                        ; Yes                       ;
+; led[3]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.46 V                       ; 8.93e-07 V                   ; 3.53 V              ; -0.0306 V           ; 0.247 V                              ; 0.252 V                              ; 6.55e-10 s                  ; 6.68e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 8.93e-07 V                  ; 3.53 V             ; -0.0306 V          ; 0.247 V                             ; 0.252 V                             ; 6.55e-10 s                 ; 6.68e-10 s                 ; No                        ; Yes                       ;
+; led[4]       ; 3.3-V LVCMOS ; 0 s                 ; 0 s                 ; 3.46 V                       ; 8.93e-07 V                   ; 3.53 V              ; -0.0306 V           ; 0.247 V                              ; 0.251 V                              ; 6.54e-10 s                  ; 6.68e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 8.93e-07 V                  ; 3.53 V             ; -0.0306 V          ; 0.247 V                             ; 0.251 V                             ; 6.54e-10 s                 ; 6.68e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_TDO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.68e-07 V                   ; 2.73 V              ; -0.0395 V           ; 0.361 V                              ; 0.109 V                              ; 3.1e-10 s                   ; 4.41e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.68e-07 V                  ; 2.73 V             ; -0.0395 V          ; 0.361 V                             ; 0.109 V                             ; 3.1e-10 s                  ; 4.41e-10 s                 ; No                        ; Yes                       ;
++--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                                                                                                                                                            ;
++--------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                                         ; To Clock                                                                                                                                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
+; inclk                                                              ; inclk                                                                                                                                     ; 293429   ; 132      ; 232      ; 0        ;
+; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock               ; inclk                                                                                                                                     ; 8        ; 0        ; 0        ; 0        ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; inclk                                                                                                                                     ; 2        ; 0        ; 0        ; 0        ;
+; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock               ; inclk                                                                                                                                     ; 1        ; 1        ; 0        ; 0        ;
+; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock         ; inclk                                                                                                                                     ; 8        ; 0        ; 0        ; 0        ;
+; inclk                                                              ; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; 8        ; 0        ; 0        ; 0        ;
+; inclk                                                              ; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; 20       ; 0        ; 0        ; 0        ;
+; inclk                                                              ; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; 4        ; 0        ; 0        ; 0        ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; 2        ; 0        ; 0        ; 0        ;
+; inclk                                                              ; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; 41       ; 0        ; 0        ; 0        ;
+; inclk                                                              ; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; 36       ; 0        ; 0        ; 0        ;
++--------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                                                                                                                                             ;
++--------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                                         ; To Clock                                                                                                                                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
+; inclk                                                              ; inclk                                                                                                                                     ; 293429   ; 132      ; 232      ; 0        ;
+; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock               ; inclk                                                                                                                                     ; 8        ; 0        ; 0        ; 0        ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; inclk                                                                                                                                     ; 2        ; 0        ; 0        ; 0        ;
+; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock               ; inclk                                                                                                                                     ; 1        ; 1        ; 0        ; 0        ;
+; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock         ; inclk                                                                                                                                     ; 8        ; 0        ; 0        ; 0        ;
+; inclk                                                              ; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; 8        ; 0        ; 0        ; 0        ;
+; inclk                                                              ; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; 20       ; 0        ; 0        ; 0        ;
+; inclk                                                              ; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; 4        ; 0        ; 0        ; 0        ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; 2        ; 0        ; 0        ; 0        ;
+; inclk                                                              ; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; 41       ; 0        ; 0        ; 0        ;
+; inclk                                                              ; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; 36       ; 0        ; 0        ; 0        ;
++--------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                                                          ;
++------------+--------------------------------------------------------------------+----------+----------+----------+----------+
+; From Clock ; To Clock                                                           ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+--------------------------------------------------------------------+----------+----------+----------+----------+
+; inclk      ; inclk                                                              ; 2164     ; 0        ; 252      ; 0        ;
+; inclk      ; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 12       ; 0        ; 0        ; 0        ;
++------------+--------------------------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Removal Transfers                                                                                                           ;
++------------+--------------------------------------------------------------------+----------+----------+----------+----------+
+; From Clock ; To Clock                                                           ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+--------------------------------------------------------------------+----------+----------+----------+----------+
+; inclk      ; inclk                                                              ; 2164     ; 0        ; 252      ; 0        ;
+; inclk      ; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 12       ; 0        ; 0        ; 0        ;
++------------+--------------------------------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 1     ; 1    ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 1     ; 1    ;
++---------------------------------+-------+------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Status Summary                                                                                                                                                                                                                                                                                       ;
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+
+; Target                                                                                                                                    ; Clock                                                                                                                                     ; Type ; Status      ;
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+
+; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; MainControl:MainControl|ReadBytes:ReadBytes|rd_clock                                                                                      ; Base ; Constrained ;
+; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; MainControl:MainControl|WriteBytes:WriteBytes|wr_clock                                                                                    ; Base ; Constrained ;
+; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg ; Base ; Constrained ;
+; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                        ; Base ; Constrained ;
+; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock                                                                                      ; Base ; Constrained ;
+; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock                                                                                ; Base ; Constrained ;
+; inclk                                                                                                                                     ; inclk                                                                                                                                     ; Base ; Constrained ;
++-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; rxd_uart   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; txd_uart    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; rxd_uart   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; txd_uart    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime TimeQuest Timing Analyzer
+    Info: Version 15.1.2 Build 193 02/01/2016 SJ Standard Edition
+    Info: Processing started: Sat Nov 20 13:24:53 2021
+Info: Command: quartus_sta Image1 -c Image1
+Info: qsta_default_script.tcl version: #2
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332164): Evaluating HDL-embedded SDC commands
+    Info (332165): Entity altera_std_synchronizer
+        Info (332166): set_false_path -to [get_keepers {*altera_std_synchronizer:*|din_s1}]
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Image1.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained generated clocks found in the design. Calling "derive_pll_clocks -create_base_clocks"
+Info (332110): Deriving PLL clocks
+    Info (332110): create_clock -period 181.818 -name {OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc} {OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc}
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name inclk inclk
+    Info (332105): create_clock -period 1.000 -name Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock
+    Info (332105): create_clock -period 1.000 -name MainControl:MainControl|ReadBytes:ReadBytes|rd_clock MainControl:MainControl|ReadBytes:ReadBytes|rd_clock
+    Info (332105): create_clock -period 1.000 -name OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg
+    Info (332105): create_clock -period 1.000 -name MainControl:MainControl|WriteBytes:WriteBytes|wr_clock MainControl:MainControl|WriteBytes:WriteBytes|wr_clock
+    Info (332105): create_clock -period 1.000 -name Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -8.576
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -8.576           -3574.136 inclk 
+    Info (332119):    -6.168              -6.168 OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg 
+    Info (332119):    -2.948              -2.948 Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock 
+    Info (332119):    -2.641              -5.920 Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock 
+    Info (332119):    -1.447              -4.195 MainControl:MainControl|WriteBytes:WriteBytes|wr_clock 
+    Info (332119):    -1.303              -1.303 MainControl:MainControl|ReadBytes:ReadBytes|rd_clock 
+    Info (332119):   179.615               0.000 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+Info (332146): Worst-case hold slack is 0.359
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.359               0.000 inclk 
+    Info (332119):     0.738               0.000 MainControl:MainControl|WriteBytes:WriteBytes|wr_clock 
+    Info (332119):     0.761               0.000 Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock 
+    Info (332119):     0.781               0.000 MainControl:MainControl|ReadBytes:ReadBytes|rd_clock 
+    Info (332119):     0.866               0.000 Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock 
+    Info (332119):     1.133               0.000 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+    Info (332119):     5.278               0.000 OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg 
+Info (332146): Worst-case recovery slack is -3.854
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.854              -7.708 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+    Info (332119):    -3.054           -1592.341 inclk 
+Info (332146): Worst-case removal slack is 1.189
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.189               0.000 inclk 
+    Info (332119):     2.352               0.000 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+Info (332146): Worst-case minimum pulse width slack is -24.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -24.000           -1313.303 inclk 
+    Info (332119):    -4.686              -9.303 OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg 
+    Info (332119):    -3.901             -11.703 MainControl:MainControl|WriteBytes:WriteBytes|wr_clock 
+    Info (332119):    -3.901             -11.703 Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock 
+    Info (332119):    -3.901              -3.901 MainControl:MainControl|ReadBytes:ReadBytes|rd_clock 
+    Info (332119):    -3.901              -3.901 Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock 
+    Info (332119):    90.675               0.000 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+Info (332114): Report Metastability: Found 3 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -8.132
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -8.132           -3356.187 inclk 
+    Info (332119):    -5.784              -5.784 OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg 
+    Info (332119):    -2.681              -2.681 Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock 
+    Info (332119):    -2.412              -5.418 Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock 
+    Info (332119):    -1.351              -3.793 MainControl:MainControl|WriteBytes:WriteBytes|wr_clock 
+    Info (332119):    -1.227              -1.227 MainControl:MainControl|ReadBytes:ReadBytes|rd_clock 
+    Info (332119):   179.742               0.000 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+Info (332146): Worst-case hold slack is 0.322
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.322               0.000 inclk 
+    Info (332119):     0.693               0.000 MainControl:MainControl|WriteBytes:WriteBytes|wr_clock 
+    Info (332119):     0.714               0.000 Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock 
+    Info (332119):     0.728               0.000 MainControl:MainControl|ReadBytes:ReadBytes|rd_clock 
+    Info (332119):     0.806               0.000 Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock 
+    Info (332119):     1.026               0.000 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+    Info (332119):     4.824               0.000 OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg 
+Info (332146): Worst-case recovery slack is -3.621
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.621              -7.242 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+    Info (332119):    -2.763           -1407.420 inclk 
+Info (332146): Worst-case removal slack is 1.068
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.068               0.000 inclk 
+    Info (332119):     2.177               0.000 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+Info (332146): Worst-case minimum pulse width slack is -24.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -24.000           -1311.522 inclk 
+    Info (332119):    -4.622              -9.103 OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg 
+    Info (332119):    -3.901             -11.703 MainControl:MainControl|WriteBytes:WriteBytes|wr_clock 
+    Info (332119):    -3.901             -11.703 Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock 
+    Info (332119):    -3.901              -3.901 MainControl:MainControl|ReadBytes:ReadBytes|rd_clock 
+    Info (332119):    -3.901              -3.901 Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock 
+    Info (332119):    90.677               0.000 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+Info (332114): Report Metastability: Found 3 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -5.415
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -5.415           -1036.296 inclk 
+    Info (332119):    -2.149              -2.149 OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg 
+    Info (332119):    -0.553              -0.553 Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock 
+    Info (332119):    -0.412              -0.660 Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock 
+    Info (332119):    -0.044              -0.057 MainControl:MainControl|WriteBytes:WriteBytes|wr_clock 
+    Info (332119):     0.016               0.000 MainControl:MainControl|ReadBytes:ReadBytes|rd_clock 
+    Info (332119):   180.914               0.000 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+Info (332146): Worst-case hold slack is -0.151
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.151              -0.169 inclk 
+    Info (332119):     0.200               0.000 MainControl:MainControl|WriteBytes:WriteBytes|wr_clock 
+    Info (332119):     0.202               0.000 Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock 
+    Info (332119):     0.211               0.000 MainControl:MainControl|ReadBytes:ReadBytes|rd_clock 
+    Info (332119):     0.246               0.000 Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock 
+    Info (332119):     0.384               0.000 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+    Info (332119):     1.369               0.000 OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg 
+Info (332146): Worst-case recovery slack is -1.507
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.507              -3.014 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+    Info (332119):    -0.618            -343.435 inclk 
+Info (332146): Worst-case removal slack is 0.485
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.485               0.000 inclk 
+    Info (332119):     0.821               0.000 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+Info (332146): Worst-case minimum pulse width slack is -24.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -24.000           -1055.159 inclk 
+    Info (332119):    -4.561              -9.101 OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg 
+    Info (332119):    -1.000              -3.000 MainControl:MainControl|WriteBytes:WriteBytes|wr_clock 
+    Info (332119):    -1.000              -3.000 Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock 
+    Info (332119):    -1.000              -1.000 MainControl:MainControl|ReadBytes:ReadBytes|rd_clock 
+    Info (332119):    -1.000              -1.000 Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock 
+    Info (332119):    90.672               0.000 OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+Info (332114): Report Metastability: Found 3 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 5021 megabytes
+    Info: Processing ended: Sat Nov 20 13:24:58 2021
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
+
+

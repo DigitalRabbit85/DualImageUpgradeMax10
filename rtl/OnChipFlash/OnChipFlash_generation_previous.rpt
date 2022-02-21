@@ -1,0 +1,63 @@
+Info: Starting: Create simulation model
+Info: qsys-generate D:\Sources\Altera\Max10Kit\SimpleSwitchImageUart_v10\rtl\OnChipFlash.qsys --simulation=VERILOG --output-directory=D:\Sources\Altera\Max10Kit\SimpleSwitchImageUart_v10\rtl\OnChipFlash\simulation --family="MAX 10" --part=10M08SAE144C8GES
+Progress: Loading rtl/OnChipFlash.qsys
+Progress: Reading input file
+Progress: Adding onchip_flash_0 [altera_onchip_flash 15.1.1]
+Progress: Parameterizing module onchip_flash_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: OnChipFlash: Generating OnChipFlash "OnChipFlash" for SIM_VERILOG
+Info: onchip_flash_0: "OnChipFlash" instantiated altera_onchip_flash "onchip_flash_0"
+Info: OnChipFlash: Done "OnChipFlash" with 2 modules, 5 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=D:\Sources\Altera\Max10Kit\SimpleSwitchImageUart_v10\rtl\OnChipFlash\OnChipFlash.spd --output-directory=D:/Sources/Altera/Max10Kit/SimpleSwitchImageUart_v10/rtl/OnChipFlash/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=D:\Sources\Altera\Max10Kit\SimpleSwitchImageUart_v10\rtl\OnChipFlash\OnChipFlash.spd --output-directory=D:/Sources/Altera/Max10Kit/SimpleSwitchImageUart_v10/rtl/OnChipFlash/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in D:/Sources/Altera/Max10Kit/SimpleSwitchImageUart_v10/rtl/OnChipFlash/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in D:/Sources/Altera/Max10Kit/SimpleSwitchImageUart_v10/rtl/OnChipFlash/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in D:/Sources/Altera/Max10Kit/SimpleSwitchImageUart_v10/rtl/OnChipFlash/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/Sources/Altera/Max10Kit/SimpleSwitchImageUart_v10/rtl/OnChipFlash/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in D:/Sources/Altera/Max10Kit/SimpleSwitchImageUart_v10/rtl/OnChipFlash/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under D:/Sources/Altera/Max10Kit/SimpleSwitchImageUart_v10/rtl/OnChipFlash/simulation/.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\Sources\Altera\Max10Kit\SimpleSwitchImageUart_v10\rtl\OnChipFlash.qsys --block-symbol-file --output-directory=D:\Sources\Altera\Max10Kit\SimpleSwitchImageUart_v10\rtl\OnChipFlash --family="MAX 10" --part=10M08SAE144C8GES
+Progress: Loading rtl/OnChipFlash.qsys
+Progress: Reading input file
+Progress: Adding onchip_flash_0 [altera_onchip_flash 15.1.1]
+Progress: Parameterizing module onchip_flash_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\Sources\Altera\Max10Kit\SimpleSwitchImageUart_v10\rtl\OnChipFlash.qsys --synthesis=VERILOG --output-directory=D:\Sources\Altera\Max10Kit\SimpleSwitchImageUart_v10\rtl\OnChipFlash\synthesis --family="MAX 10" --part=10M08SAE144C8GES
+Progress: Loading rtl/OnChipFlash.qsys
+Progress: Reading input file
+Progress: Adding onchip_flash_0 [altera_onchip_flash 15.1.1]
+Progress: Parameterizing module onchip_flash_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: OnChipFlash: Generating OnChipFlash "OnChipFlash" for QUARTUS_SYNTH
+Info: onchip_flash_0: Generating top-level entity altera_onchip_flash
+Info: onchip_flash_0: "OnChipFlash" instantiated altera_onchip_flash "onchip_flash_0"
+Info: OnChipFlash: Done "OnChipFlash" with 2 modules, 7 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

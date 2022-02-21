@@ -1,0 +1,305 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'inclk'
+Slack : -8.576
+TNS   : -3574.136
+
+Type  : Slow 1200mV 85C Model Setup 'OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg'
+Slack : -6.168
+TNS   : -6.168
+
+Type  : Slow 1200mV 85C Model Setup 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : -2.948
+TNS   : -2.948
+
+Type  : Slow 1200mV 85C Model Setup 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : -2.641
+TNS   : -5.920
+
+Type  : Slow 1200mV 85C Model Setup 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : -1.447
+TNS   : -4.195
+
+Type  : Slow 1200mV 85C Model Setup 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : -1.303
+TNS   : -1.303
+
+Type  : Slow 1200mV 85C Model Setup 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : 179.615
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inclk'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : 0.738
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : 0.761
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : 0.781
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : 0.866
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : 1.133
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg'
+Slack : 5.278
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : -3.854
+TNS   : -7.708
+
+Type  : Slow 1200mV 85C Model Recovery 'inclk'
+Slack : -3.054
+TNS   : -1592.341
+
+Type  : Slow 1200mV 85C Model Removal 'inclk'
+Slack : 1.189
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : 2.352
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inclk'
+Slack : -24.000
+TNS   : -1313.303
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg'
+Slack : -4.686
+TNS   : -9.303
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : -3.901
+TNS   : -11.703
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : -3.901
+TNS   : -11.703
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : -3.901
+TNS   : -3.901
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : -3.901
+TNS   : -3.901
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : 90.675
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'inclk'
+Slack : -8.132
+TNS   : -3356.187
+
+Type  : Slow 1200mV 0C Model Setup 'OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg'
+Slack : -5.784
+TNS   : -5.784
+
+Type  : Slow 1200mV 0C Model Setup 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : -2.681
+TNS   : -2.681
+
+Type  : Slow 1200mV 0C Model Setup 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : -2.412
+TNS   : -5.418
+
+Type  : Slow 1200mV 0C Model Setup 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : -1.351
+TNS   : -3.793
+
+Type  : Slow 1200mV 0C Model Setup 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : -1.227
+TNS   : -1.227
+
+Type  : Slow 1200mV 0C Model Setup 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : 179.742
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inclk'
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : 0.714
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : 0.728
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : 0.806
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : 1.026
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg'
+Slack : 4.824
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : -3.621
+TNS   : -7.242
+
+Type  : Slow 1200mV 0C Model Recovery 'inclk'
+Slack : -2.763
+TNS   : -1407.420
+
+Type  : Slow 1200mV 0C Model Removal 'inclk'
+Slack : 1.068
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : 2.177
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inclk'
+Slack : -24.000
+TNS   : -1311.522
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg'
+Slack : -4.622
+TNS   : -9.103
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : -3.901
+TNS   : -11.703
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : -3.901
+TNS   : -11.703
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : -3.901
+TNS   : -3.901
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : -3.901
+TNS   : -3.901
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : 90.677
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'inclk'
+Slack : -5.415
+TNS   : -1036.296
+
+Type  : Fast 1200mV 0C Model Setup 'OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg'
+Slack : -2.149
+TNS   : -2.149
+
+Type  : Fast 1200mV 0C Model Setup 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : -0.553
+TNS   : -0.553
+
+Type  : Fast 1200mV 0C Model Setup 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : -0.412
+TNS   : -0.660
+
+Type  : Fast 1200mV 0C Model Setup 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : -0.044
+TNS   : -0.057
+
+Type  : Fast 1200mV 0C Model Setup 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : 0.016
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : 180.914
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inclk'
+Slack : -0.151
+TNS   : -0.169
+
+Type  : Fast 1200mV 0C Model Hold 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : 0.211
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : 0.246
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg'
+Slack : 1.369
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : -1.507
+TNS   : -3.014
+
+Type  : Fast 1200mV 0C Model Recovery 'inclk'
+Slack : -0.618
+TNS   : -343.435
+
+Type  : Fast 1200mV 0C Model Removal 'inclk'
+Slack : 0.485
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : 0.821
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inclk'
+Slack : -24.000
+TNS   : -1055.159
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'OnChipFlash:OnChipFlash|altera_onchip_flash:onchip_flash_0|altera_onchip_flash_avmm_data_controller:avmm_data_controller|flash_se_neg_reg'
+Slack : -4.561
+TNS   : -9.101
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'OnChipFlash|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc'
+Slack : 90.672
+TNS   : 0.000
+
+------------------------------------------------------------

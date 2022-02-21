@@ -1,0 +1,209 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'inclk'
+Slack : -6.694
+TNS   : -868.467
+
+Type  : Slow 1200mV 85C Model Setup 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : -2.797
+TNS   : -6.017
+
+Type  : Slow 1200mV 85C Model Setup 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : -2.463
+TNS   : -2.463
+
+Type  : Slow 1200mV 85C Model Setup 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : -1.751
+TNS   : -4.473
+
+Type  : Slow 1200mV 85C Model Setup 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : -1.460
+TNS   : -1.460
+
+Type  : Slow 1200mV 85C Model Hold 'inclk'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : 0.722
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : 0.781
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : 0.826
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : 0.831
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'inclk'
+Slack : -2.728
+TNS   : -688.621
+
+Type  : Slow 1200mV 85C Model Removal 'inclk'
+Slack : 2.152
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inclk'
+Slack : -24.000
+TNS   : -465.839
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : -3.901
+TNS   : -11.703
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : -3.901
+TNS   : -11.703
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : -3.901
+TNS   : -3.901
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : -3.901
+TNS   : -3.901
+
+Type  : Slow 1200mV 0C Model Setup 'inclk'
+Slack : -6.211
+TNS   : -809.347
+
+Type  : Slow 1200mV 0C Model Setup 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : -2.569
+TNS   : -5.531
+
+Type  : Slow 1200mV 0C Model Setup 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : -2.223
+TNS   : -2.223
+
+Type  : Slow 1200mV 0C Model Setup 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : -1.657
+TNS   : -4.069
+
+Type  : Slow 1200mV 0C Model Setup 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : -1.400
+TNS   : -1.400
+
+Type  : Slow 1200mV 0C Model Hold 'inclk'
+Slack : 0.303
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : 0.681
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : 0.732
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : 0.774
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : 0.775
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'inclk'
+Slack : -2.450
+TNS   : -616.421
+
+Type  : Slow 1200mV 0C Model Removal 'inclk'
+Slack : 1.948
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inclk'
+Slack : -24.000
+TNS   : -465.242
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : -3.901
+TNS   : -11.703
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : -3.901
+TNS   : -11.703
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : -3.901
+TNS   : -3.901
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : -3.901
+TNS   : -3.901
+
+Type  : Fast 1200mV 0C Model Setup 'inclk'
+Slack : -1.991
+TNS   : -194.515
+
+Type  : Fast 1200mV 0C Model Setup 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : -0.508
+TNS   : -0.732
+
+Type  : Fast 1200mV 0C Model Setup 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : -0.323
+TNS   : -0.323
+
+Type  : Fast 1200mV 0C Model Setup 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : -0.195
+TNS   : -0.209
+
+Type  : Fast 1200mV 0C Model Setup 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : -0.028
+TNS   : -0.028
+
+Type  : Fast 1200mV 0C Model Hold 'inclk'
+Slack : 0.058
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : 0.197
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : 0.209
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : 0.226
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : 0.226
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'inclk'
+Slack : -0.627
+TNS   : -150.603
+
+Type  : Fast 1200mV 0C Model Removal 'inclk'
+Slack : 0.981
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inclk'
+Slack : -24.000
+TNS   : -379.289
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MainControl:MainControl|WriteBytes:WriteBytes|wr_clock'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Receiver:Receiver|RxUART_logic:RxUART_logic|wr_clock'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MainControl:MainControl|ReadBytes:ReadBytes|rd_clock'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Transmitter:Transmitter|TxUART_logic:TxUART_logic|rd_clock'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

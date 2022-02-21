@@ -1,0 +1,19 @@
+vlog -sv $dir_rtl/Top.sv
+vlog -sv $dir_rtl/Reset.sv
+vlog -sv $dir_rtl/Receiver.sv
+    vlog -sv $dir_rtl/SingleRxUART.sv
+    vlog -sv $dir_rtl/RxUART_timeout.sv
+    vlog -sv $dir_rtl/RxUART_logic.sv
+vlog -sv $dir_rtl/Transmitter.sv
+	vlog -sv $dir_rtl/TxUART_logic.sv
+    vlog -sv $dir_rtl/SingleTxUART.sv    
+vlog -sv $dir_rtl/Memory.sv
+    vlog -sv $dir_rtl/DualPortDualClock_ram.sv
+vlog -sv $dir_rtl/MainControl.sv    
+	vlog -sv $dir_rtl/StateMachine.sv
+	vlog -sv $dir_rtl/ReadBytes.sv
+	vlog -sv $dir_rtl/WriteBytes.sv
+vlog -sv $dir_rtl/ImageControl.sv
+vlog -sv $dir_rtl/FlashControl.sv
+vlog -sv $dir_rtl/ControlInterface.sv
+vlog -sv $dir_rtl/DataInterface.sv
